@@ -1,4 +1,4 @@
-# EEPROM library for TI TM4C Microcontroller
+# TI TM4C Microcontroller EEPROM Library
 
 Bare bones EEPROM library. Does not yet implement password protecting blocks.
 
