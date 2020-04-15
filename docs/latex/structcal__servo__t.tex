@@ -1,0 +1,30 @@
+\hypertarget{structcal__servo__t}{}\doxysection{cal\+\_\+servo\+\_\+t Struct Reference}
+\label{structcal__servo__t}\index{cal\_servo\_t@{cal\_servo\_t}}
+
+
+Datatype for Servo calibration.  
+
+
+
+
+{\ttfamily \#include $<$calibration.\+h$>$}
+
+\doxysubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structcal__servo__t_a1afa9317063736a4ffe2acc8ebe6a878}\label{structcal__servo__t_a1afa9317063736a4ffe2acc8ebe6a878}} 
+int \mbox{\hyperlink{structcal__servo__t_a1afa9317063736a4ffe2acc8ebe6a878}{a}}
+\begin{DoxyCompactList}\small\item\em \char`\"{}a\char`\"{} constant coefficient value, stored in E\+E\+P\+R\+OM 0x0 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structcal__servo__t_ab9846d9332b2617826e6cfebf038b43c}\label{structcal__servo__t_ab9846d9332b2617826e6cfebf038b43c}} 
+int \mbox{\hyperlink{structcal__servo__t_ab9846d9332b2617826e6cfebf038b43c}{b}}
+\begin{DoxyCompactList}\small\item\em \char`\"{}b\char`\"{} coefficient base value, stored in E\+E\+P\+R\+OM 0x1 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Datatype for Servo calibration. 
+
+Calibration should be of the form match value = period -\/ (a + b $\ast$ (degrees / 180.\+0)) Where \char`\"{}a\char`\"{} and \char`\"{}b\char`\"{} are constants, period is the period in clock cycles (32000), and degrees is the amount in degrees to turn. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{calibration_8h}{calibration.\+h}}\end{DoxyCompactItemize}

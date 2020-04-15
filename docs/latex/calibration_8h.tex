@@ -1,0 +1,74 @@
+\hypertarget{calibration_8h}{}\doxysection{calibration.\+h File Reference}
+\label{calibration_8h}\index{calibration.h@{calibration.h}}
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structcal__ir__t}{cal\+\_\+ir\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em Datatype for IR calibration. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structcal__servo__t}{cal\+\_\+servo\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em Datatype for Servo calibration. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{calibration_8h_a5c90aa3c10c09db379aa809bc82b2107}\label{calibration_8h_a5c90aa3c10c09db379aa809bc82b2107}} 
+\mbox{\hyperlink{structcal__servo__t}{cal\+\_\+servo\+\_\+t}} $\ast$ \mbox{\hyperlink{calibration_8h_a5c90aa3c10c09db379aa809bc82b2107}{calibration\+\_\+get\+Servo\+Calibration}} ()
+\begin{DoxyCompactList}\small\item\em Retrieves the saved calibration values for the servo from E\+E\+P\+R\+OM. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{calibration_8h_a7b2881333ff43594ab59a64c67353c77}\label{calibration_8h_a7b2881333ff43594ab59a64c67353c77}} 
+ir\+\_\+cal\+\_\+t $\ast$ \mbox{\hyperlink{calibration_8h_a7b2881333ff43594ab59a64c67353c77}{calibration\+\_\+get\+I\+R\+Calibration}} ()
+\begin{DoxyCompactList}\small\item\em Retrieves the saved calibration values for the IR Sensor from E\+E\+P\+R\+OM. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{calibration_8h_aaa5e9c77ec5b7dca773c54efffc46c88}{calibration\+\_\+get\+Distance}} (float adc\+Value)
+\begin{DoxyCompactList}\small\item\em calibrates the IR Sensor. \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{calibration_8h_ab6ff91b4486bd773399b78b70a2416ec}{calibration\+\_\+get\+Match\+Value}} (float degrees)
+\begin{DoxyCompactList}\small\item\em calibrates the servo motor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This file simply servers as a wrapper for the E\+E\+P\+R\+OM library. This is to provide an easy interface for students to consistently read from the same locations for calibration values.
+
+\begin{DoxyAuthor}{Author}
+Braedon Giblin \href{mailto:bgiblin@iastate.edu}{\texttt{ bgiblin@iastate.\+edu}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{calibration_8h_aaa5e9c77ec5b7dca773c54efffc46c88}\label{calibration_8h_aaa5e9c77ec5b7dca773c54efffc46c88}} 
+\index{calibration.h@{calibration.h}!calibration\_getDistance@{calibration\_getDistance}}
+\index{calibration\_getDistance@{calibration\_getDistance}!calibration.h@{calibration.h}}
+\doxysubsubsection{\texorpdfstring{calibration\_getDistance()}{calibration\_getDistance()}}
+{\footnotesize\ttfamily float calibration\+\_\+get\+Distance (\begin{DoxyParamCaption}\item[{float}]{adc\+Value }\end{DoxyParamCaption})}
+
+
+
+calibrates the IR Sensor. 
+
+This will return a distance, in centimeters, given an A\+DC value.
+
+
+\begin{DoxyParams}{Parameters}
+{\em adc\+Value} & Raw reading from the A\+DC. This should be averaged if possible.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+distance in centimeters. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{calibration_8h_ab6ff91b4486bd773399b78b70a2416ec}\label{calibration_8h_ab6ff91b4486bd773399b78b70a2416ec}} 
+\index{calibration.h@{calibration.h}!calibration\_getMatchValue@{calibration\_getMatchValue}}
+\index{calibration\_getMatchValue@{calibration\_getMatchValue}!calibration.h@{calibration.h}}
+\doxysubsubsection{\texorpdfstring{calibration\_getMatchValue()}{calibration\_getMatchValue()}}
+{\footnotesize\ttfamily uint32\+\_\+t calibration\+\_\+get\+Match\+Value (\begin{DoxyParamCaption}\item[{float}]{degrees }\end{DoxyParamCaption})}
+
+
+
+calibrates the servo motor. 
+
+This will return a match value. This match value can then be written to the M\+A\+T\+C\+HR and T\+B\+MR registers.
+
+
+\begin{DoxyParams}{Parameters}
+{\em degrees} & Degrees to set the servo too. Must be between 0 and 180.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Match value for timer 
+\end{DoxyReturn}

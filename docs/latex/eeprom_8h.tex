@@ -1,0 +1,364 @@
+\hypertarget{eeprom_8h}{}\doxysection{eeprom.\+h File Reference}
+\label{eeprom_8h}\index{eeprom.h@{eeprom.h}}
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include $<$stddef.\+h$>$}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{eeprom_8h_aba5736e53c1aac1c7e9c3c0ccecad251}\label{eeprom_8h_aba5736e53c1aac1c7e9c3c0ccecad251}} 
+void \mbox{\hyperlink{eeprom_8h_aba5736e53c1aac1c7e9c3c0ccecad251}{eeprom\+\_\+init}} ()
+\begin{DoxyCompactList}\small\item\em Initialize E\+E\+P\+R\+OM. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{eeprom_8h_a4dbf3eded6d77b0e489e8da49e2a3976}{eeprom\+\_\+write\+Char}} (uint8\+\_\+t addr, char data)
+\begin{DoxyCompactList}\small\item\em Writes a char. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{eeprom_8h_ac5e749811a969f9b5d0044eee183f92b}{eeprom\+\_\+write\+Short}} (uint8\+\_\+t addr, short data)
+\begin{DoxyCompactList}\small\item\em Writes a short. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{eeprom_8h_a1ad8d12281318fc8eacfe3c63ea57b88}{eeprom\+\_\+write\+Int}} (uint8\+\_\+t addr, int data)
+\begin{DoxyCompactList}\small\item\em Writes an int. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{eeprom_8h_a856ef841b3c47909b83e581b395f5d1a}{eeprom\+\_\+write\+Long}} (uint8\+\_\+t addr, long data)
+\begin{DoxyCompactList}\small\item\em Writes a long. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{eeprom_8h_a6ef37aa40b45e936794836f4ea22099a}{eeprom\+\_\+write\+Long\+Long}} (uint8\+\_\+t addr, long long data)
+\begin{DoxyCompactList}\small\item\em Writes a long long. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{eeprom_8h_a1262bc4d029f3f8b1e85ebf3ef9b6619}{eeprom\+\_\+write\+Float}} (uint8\+\_\+t addr, float data)
+\begin{DoxyCompactList}\small\item\em Writes a float. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{eeprom_8h_a25fa003289d6ec1c286a978c973fb5ac}{eeprom\+\_\+write\+Double}} (uint8\+\_\+t addr, double data)
+\begin{DoxyCompactList}\small\item\em Writes a double. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{eeprom_8h_a9f34f779050ff2803ee5f61c031c6d5d}{eeprom\+\_\+write\+Data}} (uint8\+\_\+t addr, void $\ast$data, size\+\_\+t n)
+\begin{DoxyCompactList}\small\item\em Writes a generic data type. \end{DoxyCompactList}\item 
+char \mbox{\hyperlink{eeprom_8h_af587d656b4d3c41c519a697669f67450}{eeprom\+\_\+read\+Char}} (uint8\+\_\+t addr)
+\begin{DoxyCompactList}\small\item\em Reads a char. \end{DoxyCompactList}\item 
+short \mbox{\hyperlink{eeprom_8h_a881c6fa1f1c1af700b84a8b10f84fb31}{eeprom\+\_\+read\+Short}} (uint8\+\_\+t addr)
+\begin{DoxyCompactList}\small\item\em Reads a short. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{eeprom_8h_a380d26545acfcc8d94d5a7dbfa6e1f66}{eeprom\+\_\+read\+Int}} (uint8\+\_\+t addr)
+\begin{DoxyCompactList}\small\item\em Reads an int. \end{DoxyCompactList}\item 
+long \mbox{\hyperlink{eeprom_8h_a8bf252848e2328aae1dffbb93ea6e31c}{eeprom\+\_\+read\+Long}} (uint8\+\_\+t addr)
+\begin{DoxyCompactList}\small\item\em Reads a long. \end{DoxyCompactList}\item 
+long long \mbox{\hyperlink{eeprom_8h_a1e430261554118707e775dec38439590}{eeprom\+\_\+read\+Long\+Long}} (uint8\+\_\+t addr)
+\begin{DoxyCompactList}\small\item\em Reads a long long. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{eeprom_8h_a430e805289ae9c0b63e5d8bc5a303436}{eeprom\+\_\+read\+Float}} (uint8\+\_\+t addr)
+\begin{DoxyCompactList}\small\item\em Reads a float. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{eeprom_8h_ad16a4b7ee0cf951ead93e6735622f8d7}{eeprom\+\_\+read\+Double}} (uint8\+\_\+t addr)
+\begin{DoxyCompactList}\small\item\em Reads a double. \end{DoxyCompactList}\item 
+void $\ast$ \mbox{\hyperlink{eeprom_8h_a86e7b6d1fb2010b47a8696460d5a76d2}{eeprom\+\_\+read\+Data}} (uint8\+\_\+t addr, size\+\_\+t size)
+\begin{DoxyCompactList}\small\item\em Reads a generic data type. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{eeprom_8h_a8ba73fb0cd181a2809770c3d7706f44f}{set\+Page}} (uint8\+\_\+t page)
+\begin{DoxyCompactList}\small\item\em Sets the E\+E\+P\+R\+OM page. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{eeprom_8h_a6f412a3c0ba404184e0a77d23825239b}{get\+Page}} ()
+\begin{DoxyCompactList}\small\item\em Gets the E\+E\+P\+R\+OM page. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Braedon Giblin \href{mailto:bgiblin@iastate.edu}{\texttt{ bgiblin@iastate.\+edu}}
+\end{DoxyAuthor}
+This defines a basic interface for the T\+M4C M\+CU\textquotesingle{}s onboard E\+E\+P\+R\+OM. This supports basic read and write operations.
+
+{\bfseries{Note on addresses}} E\+E\+P\+R\+OM consists of 32 blocks of 16 (64 bit) words. So, to make address 1 byte, E\+E\+P\+R\+OM is paged into two pages (through software). The upper four bytes of an address consist of the block, and the lower 4 bytes represent the word. 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{eeprom_8h_af587d656b4d3c41c519a697669f67450}\label{eeprom_8h_af587d656b4d3c41c519a697669f67450}} 
+\index{eeprom.h@{eeprom.h}!eeprom\_readChar@{eeprom\_readChar}}
+\index{eeprom\_readChar@{eeprom\_readChar}!eeprom.h@{eeprom.h}}
+\doxysubsubsection{\texorpdfstring{eeprom\_readChar()}{eeprom\_readChar()}}
+{\footnotesize\ttfamily char eeprom\+\_\+read\+Char (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{addr }\end{DoxyParamCaption})}
+
+
+
+Reads a char. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em addr} & Address to read from\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+data read 
+\end{DoxyReturn}
+\mbox{\Hypertarget{eeprom_8h_a86e7b6d1fb2010b47a8696460d5a76d2}\label{eeprom_8h_a86e7b6d1fb2010b47a8696460d5a76d2}} 
+\index{eeprom.h@{eeprom.h}!eeprom\_readData@{eeprom\_readData}}
+\index{eeprom\_readData@{eeprom\_readData}!eeprom.h@{eeprom.h}}
+\doxysubsubsection{\texorpdfstring{eeprom\_readData()}{eeprom\_readData()}}
+{\footnotesize\ttfamily void$\ast$ eeprom\+\_\+read\+Data (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{addr,  }\item[{size\+\_\+t}]{size }\end{DoxyParamCaption})}
+
+
+
+Reads a generic data type. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em addr} & Address to read from \\
+\hline
+{\em size} & Size of data to read\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+data read 
+\end{DoxyReturn}
+\mbox{\Hypertarget{eeprom_8h_ad16a4b7ee0cf951ead93e6735622f8d7}\label{eeprom_8h_ad16a4b7ee0cf951ead93e6735622f8d7}} 
+\index{eeprom.h@{eeprom.h}!eeprom\_readDouble@{eeprom\_readDouble}}
+\index{eeprom\_readDouble@{eeprom\_readDouble}!eeprom.h@{eeprom.h}}
+\doxysubsubsection{\texorpdfstring{eeprom\_readDouble()}{eeprom\_readDouble()}}
+{\footnotesize\ttfamily double eeprom\+\_\+read\+Double (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{addr }\end{DoxyParamCaption})}
+
+
+
+Reads a double. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em addr} & Address to read from\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+data read 
+\end{DoxyReturn}
+\mbox{\Hypertarget{eeprom_8h_a430e805289ae9c0b63e5d8bc5a303436}\label{eeprom_8h_a430e805289ae9c0b63e5d8bc5a303436}} 
+\index{eeprom.h@{eeprom.h}!eeprom\_readFloat@{eeprom\_readFloat}}
+\index{eeprom\_readFloat@{eeprom\_readFloat}!eeprom.h@{eeprom.h}}
+\doxysubsubsection{\texorpdfstring{eeprom\_readFloat()}{eeprom\_readFloat()}}
+{\footnotesize\ttfamily float eeprom\+\_\+read\+Float (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{addr }\end{DoxyParamCaption})}
+
+
+
+Reads a float. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em addr} & Address to read from\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+data read 
+\end{DoxyReturn}
+\mbox{\Hypertarget{eeprom_8h_a380d26545acfcc8d94d5a7dbfa6e1f66}\label{eeprom_8h_a380d26545acfcc8d94d5a7dbfa6e1f66}} 
+\index{eeprom.h@{eeprom.h}!eeprom\_readInt@{eeprom\_readInt}}
+\index{eeprom\_readInt@{eeprom\_readInt}!eeprom.h@{eeprom.h}}
+\doxysubsubsection{\texorpdfstring{eeprom\_readInt()}{eeprom\_readInt()}}
+{\footnotesize\ttfamily int eeprom\+\_\+read\+Int (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{addr }\end{DoxyParamCaption})}
+
+
+
+Reads an int. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em addr} & Address to read from\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+data read 
+\end{DoxyReturn}
+\mbox{\Hypertarget{eeprom_8h_a8bf252848e2328aae1dffbb93ea6e31c}\label{eeprom_8h_a8bf252848e2328aae1dffbb93ea6e31c}} 
+\index{eeprom.h@{eeprom.h}!eeprom\_readLong@{eeprom\_readLong}}
+\index{eeprom\_readLong@{eeprom\_readLong}!eeprom.h@{eeprom.h}}
+\doxysubsubsection{\texorpdfstring{eeprom\_readLong()}{eeprom\_readLong()}}
+{\footnotesize\ttfamily long eeprom\+\_\+read\+Long (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{addr }\end{DoxyParamCaption})}
+
+
+
+Reads a long. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em addr} & Address to read from\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+data read 
+\end{DoxyReturn}
+\mbox{\Hypertarget{eeprom_8h_a1e430261554118707e775dec38439590}\label{eeprom_8h_a1e430261554118707e775dec38439590}} 
+\index{eeprom.h@{eeprom.h}!eeprom\_readLongLong@{eeprom\_readLongLong}}
+\index{eeprom\_readLongLong@{eeprom\_readLongLong}!eeprom.h@{eeprom.h}}
+\doxysubsubsection{\texorpdfstring{eeprom\_readLongLong()}{eeprom\_readLongLong()}}
+{\footnotesize\ttfamily long long eeprom\+\_\+read\+Long\+Long (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{addr }\end{DoxyParamCaption})}
+
+
+
+Reads a long long. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em addr} & Address to read from\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+data read 
+\end{DoxyReturn}
+\mbox{\Hypertarget{eeprom_8h_a881c6fa1f1c1af700b84a8b10f84fb31}\label{eeprom_8h_a881c6fa1f1c1af700b84a8b10f84fb31}} 
+\index{eeprom.h@{eeprom.h}!eeprom\_readShort@{eeprom\_readShort}}
+\index{eeprom\_readShort@{eeprom\_readShort}!eeprom.h@{eeprom.h}}
+\doxysubsubsection{\texorpdfstring{eeprom\_readShort()}{eeprom\_readShort()}}
+{\footnotesize\ttfamily short eeprom\+\_\+read\+Short (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{addr }\end{DoxyParamCaption})}
+
+
+
+Reads a short. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em addr} & Address to read from\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+data read 
+\end{DoxyReturn}
+\mbox{\Hypertarget{eeprom_8h_a4dbf3eded6d77b0e489e8da49e2a3976}\label{eeprom_8h_a4dbf3eded6d77b0e489e8da49e2a3976}} 
+\index{eeprom.h@{eeprom.h}!eeprom\_writeChar@{eeprom\_writeChar}}
+\index{eeprom\_writeChar@{eeprom\_writeChar}!eeprom.h@{eeprom.h}}
+\doxysubsubsection{\texorpdfstring{eeprom\_writeChar()}{eeprom\_writeChar()}}
+{\footnotesize\ttfamily void eeprom\+\_\+write\+Char (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{addr,  }\item[{char}]{data }\end{DoxyParamCaption})}
+
+
+
+Writes a char. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em addr} & Address to write to \\
+\hline
+{\em data} & data to write \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{eeprom_8h_a9f34f779050ff2803ee5f61c031c6d5d}\label{eeprom_8h_a9f34f779050ff2803ee5f61c031c6d5d}} 
+\index{eeprom.h@{eeprom.h}!eeprom\_writeData@{eeprom\_writeData}}
+\index{eeprom\_writeData@{eeprom\_writeData}!eeprom.h@{eeprom.h}}
+\doxysubsubsection{\texorpdfstring{eeprom\_writeData()}{eeprom\_writeData()}}
+{\footnotesize\ttfamily void eeprom\+\_\+write\+Data (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{addr,  }\item[{void $\ast$}]{data,  }\item[{size\+\_\+t}]{n }\end{DoxyParamCaption})}
+
+
+
+Writes a generic data type. 
+
+Generic data type can be an array, struct, etc.
+
+
+\begin{DoxyParams}{Parameters}
+{\em addr} & Address to write to \\
+\hline
+{\em data} & data to write \\
+\hline
+{\em n} & size of dat \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{eeprom_8h_a25fa003289d6ec1c286a978c973fb5ac}\label{eeprom_8h_a25fa003289d6ec1c286a978c973fb5ac}} 
+\index{eeprom.h@{eeprom.h}!eeprom\_writeDouble@{eeprom\_writeDouble}}
+\index{eeprom\_writeDouble@{eeprom\_writeDouble}!eeprom.h@{eeprom.h}}
+\doxysubsubsection{\texorpdfstring{eeprom\_writeDouble()}{eeprom\_writeDouble()}}
+{\footnotesize\ttfamily void eeprom\+\_\+write\+Double (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{addr,  }\item[{double}]{data }\end{DoxyParamCaption})}
+
+
+
+Writes a double. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em addr} & Address to write to \\
+\hline
+{\em data} & data to write \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{eeprom_8h_a1262bc4d029f3f8b1e85ebf3ef9b6619}\label{eeprom_8h_a1262bc4d029f3f8b1e85ebf3ef9b6619}} 
+\index{eeprom.h@{eeprom.h}!eeprom\_writeFloat@{eeprom\_writeFloat}}
+\index{eeprom\_writeFloat@{eeprom\_writeFloat}!eeprom.h@{eeprom.h}}
+\doxysubsubsection{\texorpdfstring{eeprom\_writeFloat()}{eeprom\_writeFloat()}}
+{\footnotesize\ttfamily void eeprom\+\_\+write\+Float (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{addr,  }\item[{float}]{data }\end{DoxyParamCaption})}
+
+
+
+Writes a float. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em addr} & Address to write to \\
+\hline
+{\em data} & data to write \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{eeprom_8h_a1ad8d12281318fc8eacfe3c63ea57b88}\label{eeprom_8h_a1ad8d12281318fc8eacfe3c63ea57b88}} 
+\index{eeprom.h@{eeprom.h}!eeprom\_writeInt@{eeprom\_writeInt}}
+\index{eeprom\_writeInt@{eeprom\_writeInt}!eeprom.h@{eeprom.h}}
+\doxysubsubsection{\texorpdfstring{eeprom\_writeInt()}{eeprom\_writeInt()}}
+{\footnotesize\ttfamily void eeprom\+\_\+write\+Int (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{addr,  }\item[{int}]{data }\end{DoxyParamCaption})}
+
+
+
+Writes an int. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em addr} & Address to write to \\
+\hline
+{\em data} & data to write \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{eeprom_8h_a856ef841b3c47909b83e581b395f5d1a}\label{eeprom_8h_a856ef841b3c47909b83e581b395f5d1a}} 
+\index{eeprom.h@{eeprom.h}!eeprom\_writeLong@{eeprom\_writeLong}}
+\index{eeprom\_writeLong@{eeprom\_writeLong}!eeprom.h@{eeprom.h}}
+\doxysubsubsection{\texorpdfstring{eeprom\_writeLong()}{eeprom\_writeLong()}}
+{\footnotesize\ttfamily void eeprom\+\_\+write\+Long (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{addr,  }\item[{long}]{data }\end{DoxyParamCaption})}
+
+
+
+Writes a long. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em addr} & Address to write to \\
+\hline
+{\em data} & data to write \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{eeprom_8h_a6ef37aa40b45e936794836f4ea22099a}\label{eeprom_8h_a6ef37aa40b45e936794836f4ea22099a}} 
+\index{eeprom.h@{eeprom.h}!eeprom\_writeLongLong@{eeprom\_writeLongLong}}
+\index{eeprom\_writeLongLong@{eeprom\_writeLongLong}!eeprom.h@{eeprom.h}}
+\doxysubsubsection{\texorpdfstring{eeprom\_writeLongLong()}{eeprom\_writeLongLong()}}
+{\footnotesize\ttfamily void eeprom\+\_\+write\+Long\+Long (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{addr,  }\item[{long long}]{data }\end{DoxyParamCaption})}
+
+
+
+Writes a long long. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em addr} & Address to write to \\
+\hline
+{\em data} & data to write \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{eeprom_8h_ac5e749811a969f9b5d0044eee183f92b}\label{eeprom_8h_ac5e749811a969f9b5d0044eee183f92b}} 
+\index{eeprom.h@{eeprom.h}!eeprom\_writeShort@{eeprom\_writeShort}}
+\index{eeprom\_writeShort@{eeprom\_writeShort}!eeprom.h@{eeprom.h}}
+\doxysubsubsection{\texorpdfstring{eeprom\_writeShort()}{eeprom\_writeShort()}}
+{\footnotesize\ttfamily void eeprom\+\_\+write\+Short (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{addr,  }\item[{short}]{data }\end{DoxyParamCaption})}
+
+
+
+Writes a short. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em addr} & Address to write to \\
+\hline
+{\em data} & data to write \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{eeprom_8h_a6f412a3c0ba404184e0a77d23825239b}\label{eeprom_8h_a6f412a3c0ba404184e0a77d23825239b}} 
+\index{eeprom.h@{eeprom.h}!getPage@{getPage}}
+\index{getPage@{getPage}!eeprom.h@{eeprom.h}}
+\doxysubsubsection{\texorpdfstring{getPage()}{getPage()}}
+{\footnotesize\ttfamily uint8\+\_\+t get\+Page (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the E\+E\+P\+R\+OM page. 
+
+Note, hardware has no concept of pages. This is entirely a software decision to limit the size of an address to one byte. \mbox{\Hypertarget{eeprom_8h_a8ba73fb0cd181a2809770c3d7706f44f}\label{eeprom_8h_a8ba73fb0cd181a2809770c3d7706f44f}} 
+\index{eeprom.h@{eeprom.h}!setPage@{setPage}}
+\index{setPage@{setPage}!eeprom.h@{eeprom.h}}
+\doxysubsubsection{\texorpdfstring{setPage()}{setPage()}}
+{\footnotesize\ttfamily void set\+Page (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{page }\end{DoxyParamCaption})}
+
+
+
+Sets the E\+E\+P\+R\+OM page. 
+
+Note, hardware has no concept of pages. This is entirely a software decision to limit the size of an address to one byte. 
