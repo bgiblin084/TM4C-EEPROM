@@ -1,6 +1,8 @@
-#EEPROM library for TI TM4C Microcontroller
+# EEPROM library for TI TM4C Microcontroller
 
-Bare basic library. Does not yet implement password protecting blocks.
+Bare bones EEPROM library. Does not yet implement password protecting blocks.
 
-##Author
+Has an example wrapper to load calibration values from bot.
+
+### Author
 Braedon Giblin <bgiblin@iastate.edu>
