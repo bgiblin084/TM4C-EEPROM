@@ -41,7 +41,7 @@ cal_servo_t* calibration_getServoCalibration();
 /**
  * @brief Retrieves the saved calibration values for the IR Sensor from EEPROM.
  */
-ir_cal_t* calibration_getIRCalibration();
+cal_ir_t* calibration_getIRCalibration();
 
 /**
  * @brief calibrates the IR Sensor.
